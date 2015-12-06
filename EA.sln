@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01-Infrastucture", "01-Infrastucture", "{54CCF913-D972-468D-A1E1-6A607EBA8B16}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02-Domain", "02-Domain", "{4C1A356E-ED5D-40F5-BF63-72FEDCB1B1DB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03-Application", "03-Application", "{87D36AD8-D3BE-4ED5-B4F1-FC60FE84B13B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04-Presentation", "04-Presentation", "{B1D5421E-2B89-4145-A003-B095B77EC394}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EA.Infrastructure", "Infrastructure\EA.Infrastructure\EA.Infrastructure.csproj", "{2151015E-1E36-4ED7-9CEB-7B6521904DF7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "InfrastructureTests", "InfrastructureTests", "{75DB4D64-1C5E-4A92-AA18-0B7458CE498B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DomainTests", "DomainTests", "{3DC6AC5D-DE5D-4CFE-8CD2-F341617DE0F6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApplicationTests", "ApplicationTests", "{5B5E9E0A-7E2A-45A5-B65C-AC65D3B72478}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PresentationTests", "PresentationTests", "{63F5D76F-1A20-4D61-B1CA-35DBB88AAA07}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2151015E-1E36-4ED7-9CEB-7B6521904DF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2151015E-1E36-4ED7-9CEB-7B6521904DF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2151015E-1E36-4ED7-9CEB-7B6521904DF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2151015E-1E36-4ED7-9CEB-7B6521904DF7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2151015E-1E36-4ED7-9CEB-7B6521904DF7} = {54CCF913-D972-468D-A1E1-6A607EBA8B16}
+		{75DB4D64-1C5E-4A92-AA18-0B7458CE498B} = {54CCF913-D972-468D-A1E1-6A607EBA8B16}
+		{3DC6AC5D-DE5D-4CFE-8CD2-F341617DE0F6} = {4C1A356E-ED5D-40F5-BF63-72FEDCB1B1DB}
+		{5B5E9E0A-7E2A-45A5-B65C-AC65D3B72478} = {87D36AD8-D3BE-4ED5-B4F1-FC60FE84B13B}
+		{63F5D76F-1A20-4D61-B1CA-35DBB88AAA07} = {B1D5421E-2B89-4145-A003-B095B77EC394}
+	EndGlobalSection
+EndGlobal
