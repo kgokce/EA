@@ -19,6 +19,7 @@ namespace EA.Infrastructure.Entities
             this.InsertDate = DateTime.Now;
             this.Status = StatusType.Available;
             this.InsertedBy = 1;
+
         }
 
         public virtual void Passivate()
