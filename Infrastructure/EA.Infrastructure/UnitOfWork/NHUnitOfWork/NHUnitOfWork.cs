@@ -32,11 +32,10 @@ namespace EA.Infrastructure.UnitOfWork
         }
         public void BeginTransaction(IsolationLevel isolationLevel = IsolationLevel.ReadCommitted)
         {
+            if (this.transaction != null)
+                this.transaction.Dispose();
             if (this.transaction == null || !this.transaction.IsActive)
             {
-                if (this.transaction != null)
-                    this.transaction.Dispose();
-
                 this.transaction = this.session.BeginTransaction(isolationLevel);
             }
         }
