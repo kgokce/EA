@@ -24,7 +24,6 @@ namespace EA.Infrastructure.UnitOfWork
         {
             if (this.transaction != null)
                 this.transaction.Dispose();
-
             if (this.transaction == null)               
                 this.transaction = this.context.Database.BeginTransaction(isolationLevel);
         }
