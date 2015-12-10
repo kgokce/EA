@@ -22,13 +22,11 @@ namespace EA.Infrastructure.UnitOfWork
 
         public void BeginTransaction(IsolationLevel isolationLevel = IsolationLevel.ReadCommitted)
         {
-            if (this.transaction == null)
-            {
-                if (this.transaction != null)
-                    this.transaction.Dispose();
+            if (this.transaction != null)
+                this.transaction.Dispose();
 
+            if (this.transaction == null)               
                 this.transaction = this.context.Database.BeginTransaction(isolationLevel);
-            }
         }
 
         public void Commit()
