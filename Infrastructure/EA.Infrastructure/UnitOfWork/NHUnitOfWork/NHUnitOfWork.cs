@@ -22,11 +22,10 @@ namespace EA.Infrastructure.UnitOfWork
 
         public void OpenSession()
         {
+            if (this.session != null)
+                this.session.Dispose();
             if (this.session == null || !this.session.IsConnected)
             {
-                if (this.session != null)
-                    this.session.Dispose();
-
                 this.session = sessionFactory.OpenSession();
             }
         }
